@@ -140,13 +140,13 @@ def find_general(a_couple, b_couple, dict_a, dict_b):
 
 
 def main():
-    url_marathonbet = 'https://www.marathonbet.by/su/popular/Tennis+-+2398'
+    url_marathonbet = 'https://www.marathonbet.ru/su/betting/Tennis+-+2398'
     html_marathonbet = get_html(url_marathonbet)
     all_players_marathonbet, all_K_marathonbet = get_all_event_marathonbet(html_marathonbet)
     arr_couple_marathonbet = create_arr_couple(all_players_marathonbet)
     marathonbet_dict = create_dict(arr_couple_marathonbet, all_K_marathonbet)
 
-    url_plusminus = 'http://plusminus.by/bet.php?events=3'
+    url_plusminus = 'https://zenit.win/line/tennis'
     html_plusminus = get_html(url_plusminus)
     arr_href = get_all_href_plusminus(html_plusminus)
     all_players_plusminus, all_K_plusminus = get_all_event_plusminus(arr_href)
